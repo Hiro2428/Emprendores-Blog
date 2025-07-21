@@ -1,0 +1,114 @@
+/* estilo.css */
+
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo del header y nav */
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Azul opaco */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white; /* Color de texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative; /* Para el efecto de subrayado */
+    padding: 5px 0; /* Espaciado vertical */
+    transition: color 0.3s ease; /* Transición de color */
+}
+
+nav a::after {
+    content: ''; /* Crear un pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Altura del subrayado */
+    background-color: #ffcc00; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente oculto */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Color amarillo al pasar el mouse */
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Mostrar el subrayado al pasar el mouse */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Color azul */
+}
+
+/* Estilo de las tarjetas */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+li {
+    background-color: white; /* Fondo blanco para las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Levantar la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666; /* Color gris para el texto del footer */
+}
+
+/* Estilo de los enlaces en el footer */
+footer a {
+    color: #007bff; /* Color azul */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
