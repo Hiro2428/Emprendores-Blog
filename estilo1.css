@@ -1,0 +1,76 @@
+/* tema.css */
+
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo del header y nav */
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Azul opaco */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white; /* Color de texto blanco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Color amarillo al pasar el mouse */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #007bff; /* Color azul */
+}
+
+/* Estilo del artículo */
+article {
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
+    max-width: 800px; /* Ancho máximo del artículo */
+    margin: 20px auto; /* Centra el artículo */
+}
+
+article img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del artículo */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo de los subtítulos */
+h2 {
+    margin-top: 20px;
+    color: #0056b3; /* Color para subtítulos */
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666; /* Color gris para el texto del footer */
+}
